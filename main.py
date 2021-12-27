@@ -20,10 +20,10 @@ window.title("My Comp")
 
 
 
-Label( window, text="Enter the word:", fg="black", font="non 12 bold") .grid(row=1, column=0)
+Label( window, text="Enter the word:", fg="black", font="non 12 bold") .place(x= 300, y=10)
 
 textentry = Entry(window, width=20)
-textentry.grid(row=2, column=0)
+textentry.place(x=400, y=30)
 
 Button(window, text="Submit", width=6, command=click) .grid(row=3, column=0)
 
@@ -38,8 +38,33 @@ my_compdictionary = {
 
 Button(window, text="Close", width=6, command=close_window) .grid(row=7, column=0)
 
-c = Canvas( window, height=50, width=50, bg="blue")
-c.grid(row=8, column=1)
+VP = Canvas( window, height=50, width=50, bg="red")
+VP.place(x=10, y= 300)
+VP.create_line(10,10, 40, 40, fill='white')
+VP.create_line(10,40, 40, 10, fill='white', width=5)
+
+output_VP_Out = Text(window, width=5, height=1, wrap=WORD)
+output_VP_Out.place(x=20, y=260)
+output_VP_Out.insert(END, "85")
+
+output_VP_In = Text(window, width=5, height=1, wrap=WORD)
+output_VP_In.place(x=80, y=320)
+output_VP_In.insert(END, "75")
+
+Acc_1 = Canvas( window, height=50, width=50, bg="blue")
+Acc_1.place(x=200, y= 300)
+Acc_1.create_line(10,10, 40, 40, fill='white')
+Acc_1.create_line(10,40, 40, 10, fill='white', width=5)
+
+Acc_2 = Canvas( window, height=50, width=50, bg="blue")
+Acc_2.place(x=300, y= 300)
+Acc_2.create_line(10,10, 40, 40, fill='white')
+Acc_2.create_line(10,40, 40, 10, fill='white', width=5)
+
+Elem = Canvas( window, height=50, width=50, bg="blue")
+Elem.place(x=200, y= 220)
+Elem.create_line(10,10, 40, 40, fill='white')
+Elem.create_line(10,40, 40, 10, fill='white', width=5)
 
 window.mainloop()
 

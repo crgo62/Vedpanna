@@ -16,10 +16,12 @@ def close_window():
     exit()
     
 def read_temp():
-    time.sleep(5)
-    output_VP_Out.insert(END,"87")
-    time.sleep(5)
-    output_VP_Out.insert(END, "90")
+    time.sleep( 5 )
+    output_VP_Out.delete(1.0, END)
+    output_VP_Out.insert( END, "87" )
+    time.sleep( 5 )
+    output_VP_Out.delete( 1.0, END )
+    output_VP_Out.insert( END, "90" )
 
 window = Tk()
 window.geometry('600x400')

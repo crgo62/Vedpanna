@@ -1,4 +1,6 @@
 from tkinter import *
+import time
+import threading
 
 def click():
     entered_text=textentry.get()
@@ -12,7 +14,12 @@ def click():
 def close_window():
     window.destroy()
     exit()
-
+    
+def read_temp():
+    time.sleep(5)
+    output_VP_Out.insert(END, "87")
+    time.sleep(5)
+    output_VP_Out.insert(END, "90")
 
 window = Tk()
 window.geometry('600x400')
@@ -43,6 +50,7 @@ VP.place(x=10, y= 300)
 VP.create_line(10,10, 40, 40, fill='white')
 VP.create_line(10,40, 40, 10, fill='white', width=5)
 
+global output_VP_Out
 output_VP_Out = Text(window, width=5, height=1, wrap=WORD)
 output_VP_Out.place(x=20, y=260)
 output_VP_Out.insert(END, "85")
@@ -65,6 +73,8 @@ Elem = Canvas( window, height=50, width=50, bg="blue")
 Elem.place(x=200, y= 220)
 Elem.create_line(10,10, 40, 40, fill='white')
 Elem.create_line(10,40, 40, 10, fill='white', width=5)
+
+threading.Thread(target=read_temp).start()
 
 window.mainloop()
 

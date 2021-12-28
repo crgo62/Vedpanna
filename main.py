@@ -17,7 +17,7 @@ def close_window():
     
 def read_temp():
     time.sleep(5)
-    output_VP_Out.insert(END, "87")
+    output_VP_Out.insert(END,"87")
     time.sleep(5)
     output_VP_Out.insert(END, "90")
 
@@ -50,10 +50,10 @@ VP.place(x=10, y= 300)
 VP.create_line(10,10, 40, 40, fill='white')
 VP.create_line(10,40, 40, 10, fill='white', width=5)
 
-global output_VP_Out
+
 output_VP_Out = Text(window, width=5, height=1, wrap=WORD)
 output_VP_Out.place(x=20, y=260)
-output_VP_Out.insert(END, "85")
+output_VP_Out.insert(END, "75")
 
 output_VP_In = Text(window, width=5, height=1, wrap=WORD)
 output_VP_In.place(x=80, y=320)

@@ -16,12 +16,11 @@ def close_window():
     exit()
     
 def read_temp():
-    time.sleep( 5 )
-    output_VP_Out.delete(1.0, END)
-    output_VP_Out.insert( END, "87" )
-    time.sleep( 5 )
-    output_VP_Out.delete( 1.0, END )
-    output_VP_Out.insert( END, "90" )
+    y=80
+    for x in range(10):
+        output_VP_Out.delete(1.0, END)
+        output_VP_Out.insert( END, y + x )
+        time.sleep( 2)
 
 window = Tk()
 window.geometry('600x400')
@@ -55,7 +54,7 @@ VP.create_line(10,40, 40, 10, fill='white', width=5)
 
 output_VP_Out = Text(window, width=5, height=1, wrap=WORD)
 output_VP_Out.place(x=20, y=260)
-output_VP_Out.insert(END, "75")
+# output_VP_Out.insert(END, "75")
 
 output_VP_In = Text(window, width=5, height=1, wrap=WORD)
 output_VP_In.place(x=80, y=320)

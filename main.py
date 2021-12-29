@@ -1,3 +1,5 @@
+import temp_scan
+
 from tkinter import *
 import time
 import threading
@@ -59,6 +61,11 @@ output_VP_Out.place(x=20, y=260)
 output_VP_In = Text(window, width=5, height=1, wrap=WORD)
 output_VP_In.place(x=80, y=320)
 output_VP_In.insert(END, "75")
+
+output_VP_1 = Text(window, width=5, height=1, wrap=WORD)
+output_VP_1.place(x=180, y=320)
+x = temp_scan.temp_value()
+output_VP_1.insert(END, x)
 
 Acc_1 = Canvas( window, height=50, width=50, bg="blue")
 Acc_1.place(x=200, y= 300)

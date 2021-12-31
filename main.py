@@ -63,22 +63,32 @@ output_VP_In.place(x=80, y=320)
 output_VP_In.insert(END, "75")
 
 output_VP_1 = Text(window, width=5, height=1, wrap=WORD)
-output_VP_1.place(x=180, y=320)
+output_VP_1.place(x=140, y=320)
 x = temp_scan.temp_value()
 output_VP_1.insert(END, x)
 
+output_Acc_1 = Text(window, width=5, height=1, wrap=WORD)
+output_Acc_1.place(x=350, y=320)
+x = temp_scan.temp_value()
+output_Acc_1.insert(END, x)
+
+output_Acc_2 = Text(window, width=5, height=1, wrap=WORD)
+output_Acc_2.place(x=530, y=320)
+x = temp_scan.temp_value()
+output_Acc_2.insert(END, x)
+
 Acc_1 = Canvas( window, height=50, width=50, bg="blue")
-Acc_1.place(x=200, y= 300)
+Acc_1.place(x=280, y= 300)
 Acc_1.create_line(10,10, 40, 40, fill='white')
 Acc_1.create_line(10,40, 40, 10, fill='white', width=5)
 
 Acc_2 = Canvas( window, height=50, width=50, bg="blue")
-Acc_2.place(x=300, y= 300)
+Acc_2.place(x=450, y= 300)
 Acc_2.create_line(10,10, 40, 40, fill='white')
 Acc_2.create_line(10,40, 40, 10, fill='white', width=5)
 
 Elem = Canvas( window, height=50, width=50, bg="blue")
-Elem.place(x=200, y= 220)
+Elem.place(x=280, y= 220)
 Elem.create_line(10,10, 40, 40, fill='white')
 Elem.create_line(10,40, 40, 10, fill='white', width=5)
 

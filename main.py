@@ -111,7 +111,11 @@ Acc_1_Pipe_Out.create_line(0,20, 50, 20, fill='white')
 
 #Main Acc2_Pipe_In
 Acc_2_Pipe_In = Canvas( window, height=40, width=50, bg="grey")
+<<<<<<< Updated upstream
 Acc_2_Pipe_In.place(x=450, y=350)
+=======
+Acc_2_Pipe_In.place(x=450, y=200)
+>>>>>>> Stashed changes
 Acc_2_Pipe_In.create_line(0,20, 50, 20, fill='white')
 
 #Develop

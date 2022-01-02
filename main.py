@@ -99,6 +99,11 @@ Pipe_VP_Out = Canvas( window, height=50, width=50, bg="grey")
 Pipe_VP_Out.place(x=100, y=200)
 Pipe_VP_Out.create_line(0,25, 50, 25, fill='white')
 
+#Develop
+Pipe_VP_In = Canvas( window, height=50, width=50, bg="grey")
+Pipe_VP_In.place(x=200, y=200)
+Pipe_VP_In.create_line(0,25, 50, 25, fill='white')
+
 threading.Thread(target=read_temp).start()
 
 window.mainloop()

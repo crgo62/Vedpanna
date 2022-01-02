@@ -22,7 +22,7 @@ def read_temp():
     for x in range(10):
         output_VP_Out.delete(1.0, END)
         output_VP_Out.insert( END, y + x )
-        time.sleep( 2)
+        time.sleep( 1)  # Develop 2->1 sek
 
 window = Tk()
 window.geometry('600x400')

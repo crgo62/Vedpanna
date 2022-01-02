@@ -25,7 +25,9 @@ def read_temp():
         time.sleep( 2)
 
 window = Tk()
-window.geometry('600x400')
+
+# Experiment
+window.geometry('600x600')
 window.title("My Comp")
 
 
@@ -60,7 +62,7 @@ output_VP_Out.place(x=20, y=260)
 
 output_VP_In = Text(window, width=5, height=1, wrap=WORD)
 output_VP_In.place(x=80, y=320)
-output_VP_In.insert(END, "65")
+output_VP_In.insert(END, "95")
 
 output_VP_1 = Text(window, width=5, height=1, wrap=WORD)
 output_VP_1.place(x=140, y=320)

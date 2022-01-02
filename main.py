@@ -109,6 +109,11 @@ Acc_1_Pipe_Out = Canvas( window, height=40, width=50, bg="grey")
 Acc_1_Pipe_Out.place(x=350, y=250)
 Acc_1_Pipe_Out.create_line(0,20, 50, 20, fill='white')
 
+#Main Acc2_Pipe_In
+Acc_2_Pipe_In = Canvas( window, height=40, width=50, bg="grey")
+Acc_2_Pipe_In.place(x=450, y=350)
+Acc_2_Pipe_In.create_line(0,20, 50, 20, fill='white')
+
 #Develop
 Pipe_VP_In = Canvas( window, height=50, width=50, bg="grey")
 Pipe_VP_In.place(x=200, y=200)

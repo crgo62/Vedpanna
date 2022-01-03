@@ -1,0 +1,3 @@
+[submodule "SubMod"]
+	path = SubMod
+	url = git@github.com:crgo62/SubMod.git
